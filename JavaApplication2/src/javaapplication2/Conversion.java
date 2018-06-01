@@ -33,7 +33,7 @@ public class Conversion {
     
     public float piesAMetros(){
         
-        float resultado =unidades.getMetros()*3.28;
+      //  float resultado =unidades.getMetros()*3.28;
         
         return resultado;
     }
