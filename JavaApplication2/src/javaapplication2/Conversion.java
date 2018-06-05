@@ -35,14 +35,14 @@ public class Conversion {
         
       //  float resultado =unidades.getMetros()*3.28;
         
-        return resultado;
-    }
-     public float getMetros() {
-        return metros;
-    }
+  //      return resultado;
+   // }
+   //  public float getMetros() {
+   //     return metros;
+   // }
 
-    public void setMetros(float metros) {
-        this.metros = metros;
-    }
-}
+   // public void setMetros(float metros) {
+   // //    this.metros = metros;
+   // }
+//}
 
