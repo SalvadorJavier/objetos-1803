@@ -9,7 +9,7 @@ import java.io.*;
 public class Persistenciausuario {
     public static void guardar(Cliente c) throws Exception{
         //Paso 1 generar el archivo donde se va agurdar el serializado 
-        File file=new File("/esteequipo/respaldoe/objetos-1803/archivaldo.yomero");
+        File file=new File("archivaldo.yomero");
         
         //indicar que se va a generar 
         FileOutputStream fos=new FileOutputStream(file);
@@ -18,4 +18,14 @@ public class Persistenciausuario {
         oos.writeObject(c);
         oos.close();
     }
+    public static Cliente leer ()throws Exception{
+        //para leer primero ponemos el archivo
+        File file=new File("archivaldo.yomero");
+        FileInputStream fis=new FileInputStream(file);
+        ObjectInputStream ois=new ObjectInputStream(fis);
+        Cliente c=(Cliente)ois.readObject();
+    return c;
+    }
+        
+    
 }

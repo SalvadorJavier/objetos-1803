@@ -12,13 +12,17 @@ package cerealizar;
 public class Apicacion {
     public static void main(String[] args)throws Exception{
         
-        Cliente c=new Cliente();
-        c.setEdad(26);
-        c.setNombre("salvador");
-        c.setSueldo(45000);
-        
+       //Cliente c=Persistenciausuario.leer();
+      //System.out.println("vamosa checar el nombre"+c.getNombre());
+      
+      for(Cliente c:Persistenciausuario.leer()){
+        System.out.println("nombre"+.getNombre());
+    }
+      /*
+       Cliente c=new Cliente();
+        c.setNombre("pedro");
+        c.setEdad(25);
         Persistenciausuario.guardar(c);
-        System.out.println("guardado con exito");
-        
+*/
     }
 }
